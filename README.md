@@ -8,9 +8,10 @@ No package installs are needed, other than python3
 ## To run:
 
 From within the scan_targets.txt, type the relative paths for the code files you'd like monitored.
-  You'll see todo_ex1 and todo_ex2 as sample python files, to show what it looks like.
+From within the scan_ignores.txt, you can ignore relative file paths, similar to .gitignore.
+--Note: the notation 'dir/*' in scan_targets or scan_ignores only includes one level below. If any children of 'dir' are directories themselves, they'll be ignored.
 
-Once that is done, fill in your parameters into the 
+Once that is done, fill in your Trello parameters and preferred comment flags into the 
 #### main.py 
 script and run it.
-From there, it will run the code scrape and card creation based on your trello credentials and preferred comment flags.
+From there, it will run the code scrape and card creation.
